@@ -250,7 +250,7 @@
 
           > .left
           {
-            width: 60px;
+            width: 100px;
             float: left;
             position: relative;
             height: 100%;
@@ -261,15 +261,19 @@
             {
               font-size: 11px;
               color: #61898C;
-              width: 100%;
+              width: 90%;
               text-align: center;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              padding: 0 5%;
 
               .centrarVertical;
             }
           }
           > .right
           {
-            width: ~"calc(100% - 64px)";
+            width: ~"calc(100% - 104px)";
             height: 100%;
             float: left;
             background: #B9CBCC;
@@ -436,7 +440,7 @@
 
           &[data-emphasis="1"]
           {
-            height: 30 + 15px;
+            height: 30 + 19px;
 
             > .barpie
             {
@@ -446,7 +450,7 @@
 
           &[data-emphasis="2"]
           {
-            height: 40 + 15px;
+            height: 40 + 19px;
 
             > .barpie
             {
@@ -456,7 +460,7 @@
 
           &[data-emphasis="3"]
           {
-            height: 50 + 15px;
+            height: 50 + 19px;
 
             > .barpie
             {
@@ -466,7 +470,7 @@
 
           &[data-emphasis="4"]
           {
-            height: 60 + 15px;
+            height: 60 + 19px;
 
             > .barpie
             {
@@ -476,7 +480,7 @@
 
           &[data-emphasis="5"]
           {
-            height: 70 + 15px;
+            height: 70 + 19px;
 
             > .barpie
             {
@@ -486,7 +490,7 @@
 
           &[data-emphasis="6"]
           {
-            height: 80 + 15px;
+            height: 80 + 19px;
 
             > .barpie
             {
@@ -496,7 +500,7 @@
 
           &[data-emphasis="7"]
           {
-            height: 90 + 15px;
+            height: 90 + 19px;
 
             > .barpie
             {
@@ -506,7 +510,7 @@
 
           &[data-emphasis="8"]
           {
-            height: 100 + 15px;
+            height: 100 + 19px;
 
             > .barpie
             {
@@ -516,7 +520,7 @@
 
           &[data-emphasis="9"]
           {
-            height: 110 + 15px;
+            height: 110 + 19px;
 
             > .barpie
             {
@@ -526,7 +530,7 @@
 
           &[data-emphasis="10"]
           {
-            height: 150 + 15px;
+            height: 150 + 19px;
 
             > .barpie
             {
@@ -542,7 +546,7 @@
           }
           > .legend
           {
-            width: 100%;
+            width: ~"calc(100% - 4px)";
             height: 15px;
             float: left;
             display: none;
@@ -555,6 +559,7 @@
             background: #B3CFD0;
             padding: 0 10%;
             box-sizing: border-box;
+            margin: 2px;
           }
         }
       }
