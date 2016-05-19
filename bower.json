@@ -1,0 +1,32 @@
+{
+  "name": "dw-chart",
+  "authors": [
+    "daniel-llach <daniel.llach@gmail.com>"
+  ],
+  "description": "A chart component for DarwinEd",
+  "main": [
+    "components/dw-chart.js",
+    "components/dw-chart.css"
+  ],
+  "moduleType": "es6",
+  "keywords": [
+    "chart",
+    "dw",
+    "darwined",
+    "groups"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "underscore": "^1.8.3",
+    "jquery-color": "^2.1.2"
+  }
+}
