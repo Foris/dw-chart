@@ -394,6 +394,7 @@
         {
           list-style: none;
           width: 100%;
+          height: ~"calc(100% - 15px)";
           display: block;
           // padding: 0 6px;
           margin-bottom: 2px;
@@ -414,10 +415,12 @@
 
           .barpie
           {
-            width: 90%;
+            width: 100%;
             height: 30px;
-            .centrar;
-            top: calc(50% - 5px);
+            float: left;
+            position: relative;
+            // .centrar;
+            // top: calc(50% - 5px);
 
             > .legend
             {
@@ -433,116 +436,118 @@
 
           &[data-emphasis="1"]
           {
-            height: 30px;
+            height: 30 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 30-15px;
+              height: 30px;
             }
           }
 
           &[data-emphasis="2"]
           {
-            height: 40px;
+            height: 40 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 40-15px;
+              height: 40px;
             }
           }
 
           &[data-emphasis="3"]
           {
-            height: 50px;
+            height: 50 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 50-15px;
+              height: 50px;
             }
           }
 
           &[data-emphasis="4"]
           {
-            height: 60px;
+            height: 60 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 60-15px;
+              height: 60px;
             }
           }
 
           &[data-emphasis="5"]
           {
-            height: 70px;
+            height: 70 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 70-15px;
+              height: 70px;
             }
           }
 
           &[data-emphasis="6"]
           {
-            height: 80px;
+            height: 80 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 80-15px;
+              height: 80px;
             }
           }
 
           &[data-emphasis="7"]
           {
-            height: 90px;
+            height: 90 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 90-15px;
+              height: 90px;
             }
           }
 
           &[data-emphasis="8"]
           {
-            height: 100px;
+            height: 100 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 100-15px;
+              height: 100px;
             }
           }
 
           &[data-emphasis="9"]
           {
-            height: 110px;
+            height: 110 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 110-15px;
+              height: 110px;
             }
           }
 
           &[data-emphasis="10"]
           {
-            height: 150px;
+            height: 150 + 15px;
 
-            > .legend
+            > .barpie
             {
-              top: 150-15px;
+              height: 150px;
             }
           }
 
           > span
           {
             width: 80%;
-            .centrarHorizontal;
+            // .centrarHorizontal;
 
           }
           > .legend
           {
+            width: 100%;
+            height: 15px;
+            float: left;
             display: none;
             font-size: 11px;
             color: #61898C;
-            width: 102%;
             text-align: center;
             text-overflow: ellipsis;
             white-space: nowrap;

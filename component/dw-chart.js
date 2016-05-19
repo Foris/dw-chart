@@ -222,13 +222,24 @@
         let perc = methods.getPercentage(num, sum);
         let bgColor = methods.percentageColor(perc+25);
 
+        // li width
         $item.delay(500).animate({
-          width: perc + '%',
-          backgroundColor: bgColor
+          width: perc + '%'
         }, {
           duration: 1000,
           easign: {
             width: "easeout",
+          },
+          complete: function() {
+            // // Animation complete.
+          }
+        });
+        // bar color
+        $item.find('> .barpie').delay(500).animate({
+          backgroundColor: bgColor
+        }, {
+          duration: 1000,
+          easign: {
             backgroundColor: "easeout"
           },
           complete: function() {
