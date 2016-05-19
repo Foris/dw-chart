@@ -168,7 +168,6 @@
       }else if(textLength > 2 && textLength < 5 ){
         textLength = 4;
       }
-      console.log("$item.text().length: ", $item.text().length);
 
       if(barWidth < parentWidth/3){
         $item.css({
