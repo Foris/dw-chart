@@ -59,7 +59,6 @@
           // options each
           data.forEach(function (data, i) {
             let itemId = data['title'].replace(' ','');
-            console.log("itemId: ", itemId);
             // hide legends
             $el.find('.legend').fadeOut("slow");
             // set bar length
