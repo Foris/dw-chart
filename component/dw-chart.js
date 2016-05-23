@@ -83,7 +83,7 @@
           // set height
           let barHeight = $el.find('> content > .chart > .bottom > li:first-child').outerHeight();
           $el.find('> content > .chart > .bottom').css({
-            height: barHeight + 13 + 'px'
+            height: barHeight + 18 + 'px'
           })
           // show legends
           legends.delay(1500).fadeIn('slow');
